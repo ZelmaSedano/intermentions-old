@@ -1,6 +1,9 @@
 // import dotenv from "dotenv";
+// import Graceful from "@ladjs/graceful";
+// import Bree from "bree";
 import express from "express";
 import mime from "mime-types";
+
 // import twilio from "twilio";
 
 // import affirmationsRouter from "./affirmationsRouter.mjs";
@@ -65,5 +68,12 @@ app.listen(port, () => {
   console.info(`Example server listening at http://localhost:${port}`);
 });
 
+// const bree = new Bree({
+//   jobs: [{ name: "twilio-scheduler", interval: "every 5 minutes" }],
+// });
+// // handle graceful reloads, pm2 support, and events like SIGHUP, SIGINT, etc.
+// const graceful = new Graceful({ brees: [bree] });
+// graceful.listen();
+// bree.start();
 // console.log("in the bottom of server.mjs");
 // everything works in this file, maybe
